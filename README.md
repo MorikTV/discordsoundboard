@@ -19,40 +19,40 @@
 git clone https://github.com/MorikTV/discordsoundboard.git
 cd discordsoundboard
 npm install
-node index.js
+node src/index.js
+```
+---
 
-⚙️ Requirements
-Windows OS
+## ⚙️ Requirements
 
-Soundpad (licensed version)
+- Windows OS  
+- Soundpad (licensed version)  
+- Node.js v16 or newer  
+- Browser with Developer Tools (Chrome or Edge recommended)  
 
-Node.js v16 or newer
+---
 
-Browser with Developer Tools (Chrome or Edge recommended)
+## 💻 Browser Script (DevTools)
 
-💻 Browser Script (DevTools)
 This script redirects Discord soundboard sounds to your Soundpad setup.
 
-🔧 How to Use
-🟢 Start index.js — your local WebSocket and HTTP server will launch.
+### 🔧 How to Use
 
-🎧 Launch Soundpad on your PC.
-
-📁 In Soundpad, create a separate category (e.g. Discord) to hold downloaded sounds.
-
-🌐 Open Discord Web while in a voice call.
-
-🔊 Open the Soundboard UI in the call (click the center soundboard icon).
-
-🛠️ Press F12 to open Developer Tools.
-
-🧠 Go to the Console tab.
-
-📋 Copy and paste the contents of client/execute.js, then press Enter.
+1. 🟢 Start `index.js` — your local WebSocket and HTTP server will launch.  
+2. 🎧 Launch Soundpad on your PC.  
+3. 📁 In Soundpad, create a **separate category** (e.g. `Discord`) to hold downloaded sounds.  
+4. 🌐 Open Discord Web while in a **voice call**.  
+5. 🔊 Open the Soundboard UI in the call (click the **center soundboard icon**).  
+6. 🛠️ Press `F12` to open Developer Tools.  
+7. 🧠 Go to the **Console** tab.  
+8. 📋 Copy and paste the contents of `client/execute.js`, then press `Enter`.  
 
 ✅ Now, clicking a sound in Discord will send it to Soundpad instead of playing it in Discord!
 
-📂 Project Structure
+---
+
+## 📂 Project Structure
+```
 discordsoundboard/
 │
 ├── client/
@@ -62,6 +62,9 @@ discordsoundboard/
 │
 ├── index.js                # Main Node.js server
 └── README.md
+```
+---
 
-📫 Contact
+## 📫 Contact
+
 Maintained by MorikTV
