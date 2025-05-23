@@ -11,8 +11,8 @@ const HTTP_PORT = 9568;
 const WS_PORT = 9567;
 const HOST = '127.0.0.1';
 
-const downloadsDir = path.join(__dirname, 'downloads');
-if (!fs.existsSync(downloadsDir)) fs.mkdirSync(downloadsDir);
+const downloadsDir = path.join(__dirname, '../downloads');
+if (!fs.existsSync(downloadsDir)) fs.mkdirSync(downloadsDir, { recursive: true });
 
 const extMap = {
     'ogg': '.ogg',
